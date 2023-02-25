@@ -1,0 +1,18 @@
+.container {
+  position: relative;
+}
+
+.contentSection {
+  display: flex;
+  overflow: scroll;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.contentSection::-webkit-scrollbar {
+  display: none;
+}
+
+.column {
+  margin: 25px 15px 15px;
+}

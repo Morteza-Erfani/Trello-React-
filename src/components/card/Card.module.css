@@ -1,0 +1,157 @@
+.cardContainer {
+  background-color: #d9e6ee;
+  border-radius: 10px;
+  padding: 3px 8px;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  margin-bottom: 25px;
+  transition: all 0.5s;
+}
+
+.summeryCard {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.labelContainer {
+  display: flex;
+  max-width: 30%;
+  flex-wrap: wrap;
+}
+
+.cardLabel {
+  width: 15px;
+  height: 15px;
+  border-radius: 10px;
+  margin-left: -5px;
+  /* background-color: antiquewhite; */
+}
+
+.cardBtnContainer {
+  display: flex;
+  gap: 11px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.editBtn {
+  width: 18px;
+  opacity: 0.7;
+}
+
+.trashBtn {
+  width: 15px;
+  opacity: 0.65;
+}
+
+.editBtn:hover,
+.trashBtn:hover {
+  opacity: 1;
+}
+
+.assignsContainer {
+  position: absolute;
+  bottom: -15px;
+  left: 10px;
+  display: flex;
+  gap: 3px;
+  max-width: 30%;
+  flex-wrap: wrap;
+}
+
+.assigns {
+  width: 20px;
+  height: 20px;
+  background-color: #b7b9ba;
+  border-radius: 50%;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.deadline {
+  position: absolute;
+  width: 80px;
+  height: 20px;
+  background-color: #b7b9ba;
+  bottom: -15px;
+  right: 20px;
+  border-radius: 5px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.deadline p {
+  font-size: 12px;
+  font-weight: 400;
+  color: #2d2d2ae1;
+}
+
+.descriptionContainer {
+  animation: cardDetail 0.5s;
+}
+
+.description {
+  border-top: 1px solid #b9b7ba;
+  margin-top: 8px;
+  padding-top: 5px;
+}
+
+.todos {
+  padding-left: 10px;
+  margin: 2px 5px 5px;
+}
+
+.todo {
+  display: flex;
+  gap: 5px;
+}
+
+.todo,
+.todo input,
+.todo label {
+  cursor: pointer;
+}
+
+.todo input {
+  border-radius: 50%;
+  border: 1px solid black;
+}
+
+.fullLabelContainer {
+  display: flex;
+  margin-bottom: 10px;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.label {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  border-radius: 7px;
+  padding: 2px 5px;
+  background-color: rgb(174, 197, 189);
+}
+
+.fullLabelColor {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  /* background-color: rgb(231, 160, 134); */
+}
+
+@keyframes cardDetail {
+  from {
+    scale: 0;
+  }
+  to {
+    scale: 100%;
+  }
+}

@@ -1,0 +1,14 @@
+.headerContainer {
+  background-image: linear-gradient(to bottom, #4c4c47, rgba(45, 45, 42, 0));
+  width: 100vw;
+  height: 50px;
+}
+
+.headerText {
+  color: #e9e2cf;
+  margin-left: 1em;
+  font-weight: bold;
+  text-shadow: -1px -1px 0 #2d2d2a;
+  cursor: default;
+  font-family: "Poppins", sans-serif;
+}
